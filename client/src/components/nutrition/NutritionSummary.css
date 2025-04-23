@@ -1,0 +1,147 @@
+.nutrition-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  
+  .calorie-summary {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .calorie-chart {
+    flex-shrink: 0;
+  }
+  
+  .calorie-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .calorie-info h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .calorie-info p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .calorie-info p.remaining {
+    color: var(--success-color);
+  }
+  
+  .calorie-info p.over {
+    color: var(--danger-color);
+  }
+  
+  .macro-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .macro-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  
+  .macro-label {
+    width: 60px;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .macro-bar {
+    flex: 1;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .macro-progress {
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .macro-progress.protein {
+    background-color: #8884d8;
+  }
+  
+  .macro-progress.carbs {
+    background-color: #82ca9d;
+  }
+  
+  .macro-progress.fat {
+    background-color: #ffc658;
+  }
+  
+  .macro-value {
+    width: 50px;
+    text-align: right;
+    font-size: 0.875rem;
+    color: var(--text-light);
+  }
+  
+  .meals-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .meals-list h4 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .meal-item {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-color);
+  }
+  
+  .meal-icon {
+    font-size: 1.25rem;
+    margin-right: var(--spacing-md);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 91, 91, 0.1);
+    border-radius: 50%;
+  }
+  
+  .meal-info {
+    flex: 1;
+  }
+  
+  .meal-title {
+    font-size: 0.9375rem;
+    margin: 0 0 4px 0;
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .meal-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    font-size: 0.75rem;
+    color: var(--text-light);
+  }
+  
+  .no-meals {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+  }
+  
+  
